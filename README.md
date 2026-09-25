@@ -6,9 +6,9 @@ Radars emit pulses, to which phase modulation is applied. The pulse is divided i
 This repository shows the quantum optimization algorithm that we implemented to find the best combinations of radar pulse chip phases, aiming to minimize sidelobes and enhance image resolution in SAR systems. Comparing performance with classical genetic algorithms and Barker sequences.
 This repository is divided into two notebooks: QUBO_HUBO_tests.ipynb to make the setups, establish the objective function, and run the baselines (genetic algorithm and Barker) and Classiq.ipynb for posing the problem in Pyomo, setting up variables, the objective function, constraints, and making the connection with Classiq, which takes the "classic" setup and creates the algorithm capable of solving the problem, providing results consistent with the baseline.
 
-*How to run the repository:
+* How to run the repository:
 The QUBO_HUBO_tests.ipynb notebook doesn't require anything more than importing certain Python libraries and modules like sympy or itertools. But for the Classiq.ipynb the first requirement is to install "pip install pyomo classiq" and then complete the authentication process for Classiq "import classiq ->
 classiq.authenticate()".
 
-*Main results:
+* Main results:
 
